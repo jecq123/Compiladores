@@ -71,12 +71,12 @@ namespace Compilador
         private void button1_Click(object sender, EventArgs e)
         {
             Cache cache = Cache.GetInstance();
-            cache.TheDictionary.Clear();
+            cache.DiccionariLineas.Clear();
             textBox2.Text = String.Empty; 
             procesarTexto();
-            foreach (KeyValuePair<int, string> entry in cache.TheDictionary)
+            foreach (KeyValuePair<int, string> entry in cache.DiccionariLineas)
             {
-                textBox2.AppendLine(entry.Key+">> "+entry.Value);
+                textBox2.AgregarLinea(entry.Key+">> "+entry.Value);
             }
         }
 
@@ -101,7 +101,7 @@ namespace Compilador
     }
     public static class WinFormsExtensions
     {
-        public static void AppendLine(this TextBox source, string value)
+        public static void AgregarLinea(this TextBox source, string value)
         {
             if (source.Text.Length == 0)
                 source.Text = value ;

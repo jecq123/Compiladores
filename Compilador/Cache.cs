@@ -7,11 +7,11 @@ namespace Compilador
     public class Cache
     {
         public static Cache Instance { get; private set; }
-        public IDictionary<int, string> TheDictionary { get; private set; }
+        public IDictionary<int, string> DiccionariLineas { get; private set; }
         
         private Cache()
         {
-            TheDictionary = new Dictionary<int, string>();
+            DiccionariLineas = new Dictionary<int, string>();
         }
         public static Cache GetInstance()
         {
@@ -23,7 +23,7 @@ namespace Compilador
         }
         public void AgregarValoresDiccionario(Linea linea)
         {
-            TheDictionary.Add(linea.lineaNumero, linea.lineaTexto);
+            DiccionariLineas.Add(linea.lineaNumero, linea.lineaTexto);
         }
     }
 }

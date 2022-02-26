@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qNqgyAvtG9lHeqBjxolosuz+soZGZ62/F4HW+7Qm0B/oKXZPKvPDmTMUIQgzsMvx3qujurMDEnN0iaGgQBIEFQ==",
+  "dgSpecHash": "Z6nT/9p6DDbo8rXNi0mCSzIS4OY/aXXY/gIVBIDrUJyyW5XyeXsP+ou0JJVzi4ayIw2aoNplsvEAuFHCyZv64w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Juan Esteban\\source\\repos\\Compilador\\Compilador\\Compilador.csproj",
+  "projectFilePath": "C:\\Users\\Juan Esteban\\source\\repos\\Compiladores\\Compilador\\Compilador.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

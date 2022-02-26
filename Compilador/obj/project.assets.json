@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juan Esteban\\source\\repos\\Compilador\\Compilador\\Compilador.csproj",
+      "projectUniqueName": "C:\\Users\\Juan Esteban\\source\\repos\\Compiladores\\Compilador\\Compilador.csproj",
       "projectName": "Compilador",
-      "projectPath": "C:\\Users\\Juan Esteban\\source\\repos\\Compilador\\Compilador\\Compilador.csproj",
+      "projectPath": "C:\\Users\\Juan Esteban\\source\\repos\\Compiladores\\Compilador\\Compilador.csproj",
       "packagesPath": "C:\\Users\\Juan Esteban\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juan Esteban\\source\\repos\\Compilador\\Compilador\\obj\\",
+      "outputPath": "C:\\Users\\Juan Esteban\\source\\repos\\Compiladores\\Compilador\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
