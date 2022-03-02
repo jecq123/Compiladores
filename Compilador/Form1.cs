@@ -21,26 +21,15 @@ namespace Compilador
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+          
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (contador == 0) {
-                groupBox2.Hide();
-            }
-            else if (contador == 1) {
-                groupBox2.Show();
-                        }
-
-            contador = contador + 1;
-            if (contador == 2) contador = 0;
-        }
+       
 
         private void procesarTexto()
         {
             Cache cache = Cache.GetInstance();
-            if (contador == 0)
+            if (radioButton1.Checked)
             {
                 
                 for (int i = 0; i < textBox1.Lines.Length; i++)
@@ -51,7 +40,7 @@ namespace Compilador
                     cache.AgregarValoresDiccionario(linea);
                 }
             }
-            else if (contador == 1)
+            else if (!radioButton1.Checked)
             {
                 string[] lineas = System.IO.File.ReadAllLines(label1.Text);
                 int lineaNumero = 0;
@@ -95,9 +84,17 @@ namespace Compilador
             }
         }
 
-       
-
-        
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                groupBox2.Show();
+            }
+            else
+            {
+                groupBox2.Hide();
+            }
+        }
     }
     public static class WinFormsExtensions
     {
