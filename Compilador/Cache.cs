@@ -1,29 +1,49 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Compilador
 {
     public class Cache
     {
-        public static Cache Instance { get; private set; }
-        public IDictionary<int, string> DiccionariLineas { get; private set; }
+        private static Cache cache;
+        private IDictionary<int, string> linesDictionary;
         
         private Cache()
         {
-            DiccionariLineas = new Dictionary<int, string>();
+            linesDictionary = new Dictionary<int, string>();
         }
         public static Cache GetInstance()
         {
-            if (Instance == null)
+            if (cache == null)
             {
-                Instance = new Cache();
+                cache = new Cache();
             }
-            return Instance;
+            return cache;
         }
-        public void AgregarValoresDiccionario(Linea linea)
+
+        public IDictionary<int, string> GetLinesDictionary()
         {
-            DiccionariLineas.Add(linea.lineaNumero, linea.lineaTexto);
+            return linesDictionary;
+        }
+        public void AddNewLine(Line line)
+        {
+            linesDictionary.Add(line.GetLineNumber(), line.GetLineText());
+        }
+
+        public void AddLines(string[] lines)
+        {
+            Line line = Line.GetInstance();
+            int numberLine = 1;
+            foreach (string lineText in lines)
+            {
+                line.SetLineValues(numberLine, lineText);
+                cache.AddNewLine(line);
+                numberLine++;
+            }
+        }
+
+        public void Reset()
+        {
+            linesDictionary.Clear();
         }
     }
 }

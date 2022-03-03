@@ -30,3 +30,18 @@ C:\Users\Juan Esteban\source\repos\Compiladores\Compilador\obj\Debug\netcoreapp3
 C:\Users\Juan Esteban\source\repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.dll
 C:\Users\Juan Esteban\source\repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.pdb
 C:\Users\Juan Esteban\source\repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.genruntimeconfig.cache
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.exe
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.deps.json
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.runtimeconfig.json
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.runtimeconfig.dev.json
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.dll
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\bin\Debug\netcoreapp3.1\Compilador.pdb
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.csprojAssemblyReference.cache
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.Form1.resources
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.csproj.GenerateResource.cache
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.AssemblyInfoInputs.cache
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.AssemblyInfo.cs
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.csproj.CoreCompileInputs.cache
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.dll
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.pdb
+C:\Users\USER\Documents\UCO\Compiladores\Repos\Compiladores\Compilador\obj\Debug\netcoreapp3.1\Compilador.genruntimeconfig.cache

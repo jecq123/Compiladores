@@ -31,13 +31,13 @@ namespace Compilador
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnFile = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.txtLines = new System.Windows.Forms.TextBox();
+            this.btnProcess = new System.Windows.Forms.Button();
+            this.txtConsole = new System.Windows.Forms.TextBox();
+            this.rbtnText = new System.Windows.Forms.RadioButton();
+            this.rbtnFile = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -45,10 +45,12 @@ namespace Compilador
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 51);
+            this.groupBox1.Controls.Add(this.btnFile);
+            this.groupBox1.Location = new System.Drawing.Point(10, 38);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 423);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(679, 317);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
@@ -56,93 +58,105 @@ namespace Compilador
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(184, 92);
+            this.label1.Location = new System.Drawing.Point(161, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.Size = new System.Drawing.Size(48, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Archivo";
             // 
-            // button3
+            // btnFile
             // 
-            this.button3.Location = new System.Drawing.Point(579, 88);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(94, 29);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFile.Location = new System.Drawing.Point(507, 66);
+            this.btnFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFile.Name = "btnFile";
+            this.btnFile.Size = new System.Drawing.Size(82, 22);
+            this.btnFile.TabIndex = 0;
+            this.btnFile.Text = "button3";
+            this.btnFile.UseVisualStyleBackColor = true;
+            this.btnFile.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 50);
+            this.groupBox2.Controls.Add(this.txtLines);
+            this.groupBox2.Location = new System.Drawing.Point(10, 38);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 424);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(679, 318);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // textBox1
+            // txtLines
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 37);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(728, 339);
-            this.textBox1.TabIndex = 1;
+            this.txtLines.Location = new System.Drawing.Point(25, 28);
+            this.txtLines.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLines.Multiline = true;
+            this.txtLines.Name = "txtLines";
+            this.txtLines.Size = new System.Drawing.Size(638, 255);
+            this.txtLines.TabIndex = 1;
+            this.txtLines.TextChanged += new System.EventHandler(this.txtLines_TextChanged);
             // 
-            // button1
+            // btnProcess
             // 
-            this.button1.Location = new System.Drawing.Point(12, 506);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "procesar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnProcess.Location = new System.Drawing.Point(10, 380);
+            this.btnProcess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProcess.Name = "btnProcess";
+            this.btnProcess.Size = new System.Drawing.Size(82, 22);
+            this.btnProcess.TabIndex = 2;
+            this.btnProcess.Text = "procesar";
+            this.btnProcess.UseVisualStyleBackColor = true;
+            this.btnProcess.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txtConsole
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 572);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(776, 286);
-            this.textBox2.TabIndex = 13;
+            this.txtConsole.Location = new System.Drawing.Point(10, 429);
+            this.txtConsole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConsole.Multiline = true;
+            this.txtConsole.Name = "txtConsole";
+            this.txtConsole.ReadOnly = true;
+            this.txtConsole.Size = new System.Drawing.Size(680, 216);
+            this.txtConsole.TabIndex = 13;
+            this.txtConsole.TextChanged += new System.EventHandler(this.txtConsole_TextChanged);
             // 
-            // radioButton1
+            // rbtnText
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 21);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(64, 24);
-            this.radioButton1.TabIndex = 14;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "texto";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.rbtnText.AutoSize = true;
+            this.rbtnText.Checked = true;
+            this.rbtnText.Location = new System.Drawing.Point(16, 16);
+            this.rbtnText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnText.Name = "rbtnText";
+            this.rbtnText.Size = new System.Drawing.Size(52, 19);
+            this.rbtnText.TabIndex = 14;
+            this.rbtnText.TabStop = true;
+            this.rbtnText.Text = "texto";
+            this.rbtnText.UseVisualStyleBackColor = true;
+            this.rbtnText.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // rbtnFile
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(163, 20);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(78, 24);
-            this.radioButton2.TabIndex = 15;
-            this.radioButton2.Text = "archivo";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtnFile.AutoSize = true;
+            this.rbtnFile.Location = new System.Drawing.Point(143, 15);
+            this.rbtnFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnFile.Name = "rbtnFile";
+            this.rbtnFile.Size = new System.Drawing.Size(64, 19);
+            this.rbtnFile.TabIndex = 15;
+            this.rbtnFile.Text = "archivo";
+            this.rbtnFile.UseVisualStyleBackColor = true;
+            this.rbtnFile.CheckedChanged += new System.EventHandler(this.rbtnFile_CheckedChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 870);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(700, 652);
+            this.Controls.Add(this.rbtnFile);
+            this.Controls.Add(this.rbtnText);
+            this.Controls.Add(this.btnProcess);
+            this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -158,13 +172,13 @@ namespace Compilador
         #endregion
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnProcess;
+        private System.Windows.Forms.TextBox txtConsole;
+        private System.Windows.Forms.Button btnFile;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbtnText;
+        private System.Windows.Forms.RadioButton rbtnFile;
+        private System.Windows.Forms.TextBox txtLines;
     }
 }
 
