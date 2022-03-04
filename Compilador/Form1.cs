@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Compilador
@@ -29,8 +32,18 @@ namespace Compilador
             }
             else if (rbtnFile.Checked)
             {
-                string[] lines = System.IO.File.ReadAllLines(label1.Text);
-                cache.AddLines(lines);
+                if (label1.Text != "")
+                {
+                    string[] lines;
+
+                    using (StreamReader sr = new StreamReader(label1.Text))
+                    {
+                        String file = sr.ReadToEnd();
+                        lines = file.Split('\n');
+                    }
+                    cache.AddLines(lines);
+                }
+                
             }
         }
 

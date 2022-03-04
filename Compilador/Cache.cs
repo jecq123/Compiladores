@@ -35,6 +35,7 @@ namespace Compilador
             int numberLine = 1;
             foreach (string lineText in lines)
             {
+                
                 line.SetLineValues(numberLine, lineText);
                 cache.AddNewLine(line);
                 numberLine++;

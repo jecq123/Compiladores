@@ -46,76 +46,67 @@ namespace Compilador
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnFile);
-            this.groupBox1.Location = new System.Drawing.Point(10, 38);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(11, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(679, 317);
+            this.groupBox1.Size = new System.Drawing.Size(776, 423);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "archivo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(161, 69);
+            this.label1.Location = new System.Drawing.Point(184, 92);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 15);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Archivo";
             // 
             // btnFile
             // 
-            this.btnFile.Location = new System.Drawing.Point(507, 66);
-            this.btnFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFile.Location = new System.Drawing.Point(579, 88);
             this.btnFile.Name = "btnFile";
-            this.btnFile.Size = new System.Drawing.Size(82, 22);
+            this.btnFile.Size = new System.Drawing.Size(153, 29);
             this.btnFile.TabIndex = 0;
-            this.btnFile.Text = "button3";
+            this.btnFile.Text = "Seleccionar archivo";
             this.btnFile.UseVisualStyleBackColor = true;
             this.btnFile.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtLines);
-            this.groupBox2.Location = new System.Drawing.Point(10, 38);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(5, 51);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(679, 318);
+            this.groupBox2.Size = new System.Drawing.Size(776, 424);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "texto";
             // 
             // txtLines
             // 
-            this.txtLines.Location = new System.Drawing.Point(25, 28);
-            this.txtLines.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtLines.Location = new System.Drawing.Point(29, 37);
             this.txtLines.Multiline = true;
             this.txtLines.Name = "txtLines";
-            this.txtLines.Size = new System.Drawing.Size(638, 255);
+            this.txtLines.Size = new System.Drawing.Size(729, 339);
             this.txtLines.TabIndex = 1;
             this.txtLines.TextChanged += new System.EventHandler(this.txtLines_TextChanged);
             // 
             // btnProcess
             // 
-            this.btnProcess.Location = new System.Drawing.Point(10, 380);
-            this.btnProcess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnProcess.Location = new System.Drawing.Point(11, 507);
             this.btnProcess.Name = "btnProcess";
-            this.btnProcess.Size = new System.Drawing.Size(82, 22);
+            this.btnProcess.Size = new System.Drawing.Size(94, 29);
             this.btnProcess.TabIndex = 2;
-            this.btnProcess.Text = "procesar";
+            this.btnProcess.Text = "Procesar";
             this.btnProcess.UseVisualStyleBackColor = true;
             this.btnProcess.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtConsole
             // 
-            this.txtConsole.Location = new System.Drawing.Point(10, 429);
-            this.txtConsole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtConsole.Location = new System.Drawing.Point(11, 572);
             this.txtConsole.Multiline = true;
             this.txtConsole.Name = "txtConsole";
             this.txtConsole.ReadOnly = true;
-            this.txtConsole.Size = new System.Drawing.Size(680, 216);
+            this.txtConsole.Size = new System.Drawing.Size(777, 287);
             this.txtConsole.TabIndex = 13;
             this.txtConsole.TextChanged += new System.EventHandler(this.txtConsole_TextChanged);
             // 
@@ -123,10 +114,9 @@ namespace Compilador
             // 
             this.rbtnText.AutoSize = true;
             this.rbtnText.Checked = true;
-            this.rbtnText.Location = new System.Drawing.Point(16, 16);
-            this.rbtnText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnText.Location = new System.Drawing.Point(18, 21);
             this.rbtnText.Name = "rbtnText";
-            this.rbtnText.Size = new System.Drawing.Size(52, 19);
+            this.rbtnText.Size = new System.Drawing.Size(64, 24);
             this.rbtnText.TabIndex = 14;
             this.rbtnText.TabStop = true;
             this.rbtnText.Text = "texto";
@@ -136,10 +126,9 @@ namespace Compilador
             // rbtnFile
             // 
             this.rbtnFile.AutoSize = true;
-            this.rbtnFile.Location = new System.Drawing.Point(143, 15);
-            this.rbtnFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rbtnFile.Location = new System.Drawing.Point(163, 20);
             this.rbtnFile.Name = "rbtnFile";
-            this.rbtnFile.Size = new System.Drawing.Size(64, 19);
+            this.rbtnFile.Size = new System.Drawing.Size(78, 24);
             this.rbtnFile.TabIndex = 15;
             this.rbtnFile.Text = "archivo";
             this.rbtnFile.UseVisualStyleBackColor = true;
@@ -147,18 +136,17 @@ namespace Compilador
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 652);
+            this.ClientSize = new System.Drawing.Size(800, 869);
             this.Controls.Add(this.rbtnFile);
             this.Controls.Add(this.rbtnText);
             this.Controls.Add(this.btnProcess);
             this.Controls.Add(this.txtConsole);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
