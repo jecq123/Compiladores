@@ -41,6 +41,7 @@ namespace CompiladorClase.AnalisisLexico
             else if (apuntador > contenidoLineaActual.Length)
             {
                 caracterActual = CategoriaGramatical.FIN_LINEA;
+                apuntador++;
             }
             else
             {
