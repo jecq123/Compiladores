@@ -307,7 +307,7 @@ namespace CompiladorClase.AnalisisLexico
                 else if (estadoactual == 5)
                 {
                     continuarAnalisis = false;
-                    retorno = ComponenteLexico.crear(numeroLineaActual, apuntador - lexema.Length, apuntador - 1, CategoriaGramatical.ENTERO, lexema);
+                    retorno = ComponenteLexico.crear(numeroLineaActual, apuntador - lexema.Length, apuntador - 1, CategoriaGramatical.SUMA, lexema);
                 }
                 else if (estadoactual == 6)
                 {
