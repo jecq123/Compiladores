@@ -1,4 +1,7 @@
-﻿using System;
+﻿using CompiladorClase.AnalisisLexico;
+using CompiladorClase.Cache;
+using CompiladorClase.Trasnversal;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -24,11 +27,16 @@ namespace Compilador
 
         private void procesarTexto()
         {
-            Cache cache = Cache.GetInstance();
-            cache.Reset();
+            ProgramaFuente cache = ProgramaFuente.obtenerProgramaFuente();
+            cache.inicializar();
+            
             if (rbtnText.Checked)
             {
-                cache.AddLines(txtLines.Lines);
+                foreach(String valorLinea in txtLines.Lines)
+                {
+                    cache.agregarLinea(valorLinea);
+                }
+                cache.agregarLinea(CategoriaGramatical.FIN_ARCHIVO);
             }
             else if (rbtnFile.Checked)
             {
@@ -36,12 +44,17 @@ namespace Compilador
                 {
                     string[] lines;
 
+
                     using (StreamReader sr = new StreamReader(label1.Text))
                     {
                         String file = sr.ReadToEnd();
                         lines = file.Split('\n');
                     }
-                    cache.AddLines(lines);
+                    foreach (String valorLinea in lines)
+                    {
+                        cache.agregarLinea(valorLinea);
+                    }
+                    cache.agregarLinea(CategoriaGramatical.FIN_ARCHIVO);
                 }
                 
             }
@@ -51,13 +64,21 @@ namespace Compilador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cache cache = Cache.GetInstance();
-            cache.Reset();
+            ProgramaFuente cache = ProgramaFuente.obtenerProgramaFuente();
+            
             txtConsole.Text = String.Empty; 
             procesarTexto();
-            foreach (KeyValuePair<int, string> entry in cache.GetLinesDictionary())
+            foreach (Linea linea in cache.obtenerLineas())
             {
-                txtConsole.AddLine(entry.Key+">> "+entry.Value);
+                txtConsole.AddLine(linea.obtenerNumeroLinea()+">> "+linea.obtenerContenido());
+            }
+            AnalizadorLexico analisador = AnalizadorLexico.crear();
+            ComponenteLexico componente = analisador.devolderSiguienteComponente();
+
+            while (!CategoriaGramatical.FIN_ARCHIVO.Equals(componente.obtenerCategoria()))
+            {
+                MessageBox.Show(componente.formarComponente());
+                componente = analisador.devolderSiguienteComponente();
             }
         }
 
