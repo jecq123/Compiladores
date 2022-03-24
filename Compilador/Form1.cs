@@ -48,7 +48,7 @@ namespace Compilador
                     using (StreamReader sr = new StreamReader(label1.Text))
                     {
                         String file = sr.ReadToEnd();
-                        lines = file.Split('\n');
+                        lines = file.Split("\r\n");
                     }
                     foreach (String valorLinea in lines)
                     {

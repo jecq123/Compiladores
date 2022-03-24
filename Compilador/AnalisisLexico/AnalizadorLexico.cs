@@ -189,7 +189,6 @@ namespace CompiladorClase.AnalisisLexico
                     else if (esDivision())
                     {
                         estadoactual = 8;
-                        lexema = lexema + caracterActual;
                     }
                     else if (esModulo())
                     {
