@@ -15,7 +15,7 @@ namespace CompiladorClase.Trasnversal
         public static string RESTA = "RESTA";
         public static string MULTIPLICACION = "MULTIPLICACION";
         public static string DIVISION = "DIVISION";
-        public static string ASIGNAION = "ASIGNAION";
+        public static string ASIGNAION = "ASIGNACION";
         public static string PARENTESIS_ABRE = "PARENTESIS ABRE";
         public static string PARENTESIS_CIERRA = "PARENTESIS CIERRA";
         public static string BLANCO = "BLANCO";
